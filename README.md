@@ -90,8 +90,8 @@ linear_model.fit(X_train_r, y_train_r)
 Hiperparámetros: `n_estimators=100`
 ```python
 # Instancia y entrenamiento del modelo
-modelo = RandomForestClassifier(n_estimators=200, max_depth=10)
-modelo.fit(X_train_c, y_train_c)
+rf_model = RandomForestRegressor(n_estimators=100, random_state=42)
+rf_model.fit(X_train_r, y_train_r)
 ```
 * XGBoost:
 Giperparámetros: `n_estimators=100, learning_rate=0.2, max_depth=6`
